@@ -1,0 +1,77 @@
+<!-- Topic: https://athena.socialhackersacademy.org/topic/grid/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid in 7 Minutes</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 1em;
+            /* align-items: center;*/
+
+        }
+
+        #header {
+            background-color: yellow;
+            grid-column: 1 /span 4;
+        }
+
+        #left {
+            background-color: blue;
+            grid-column: 1 / span 2;
+        }
+
+        #center {
+            background-color: red;
+            grid-column: 3 / span 2 ;
+        }
+
+        #right {
+            background-color: green;
+            grid-column: 1 /span 1;
+            grid-row: 2;
+        }
+
+       #footer {
+            background-color: navy;
+            grid-column: 2 /span 3;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+       
+        
+        <p id="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, provident odio, quam obcaecati
+            magni sapiente eos voluptatibus adipisci fugit blanditiis.</p>
+
+        <p id="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, provident odio, quam obcaecati
+            magni sapiente eos voluptatibus adipisci fugit blanditiis. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Maxime, provident odio, quam obcaecati
+            magni sapiente eos voluptatibus adipisci fugit blanditiis.</p>
+
+        <p id="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, provident odio, quam obcaecati
+            magni sapiente eos voluptatibus adipisci fugit blanditiis.</p>
+
+
+        <p id="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum accusamus, architecto ipsa
+            eligendi modi facere illum, provident blanditiis perferendis expedita qui dignissimos voluptatibus eum
+            adipisci, ipsam nulla? Exercitationem, perspiciatis
+            deserunt?
+        </p>
+        <p id="header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum accusamus, architecto ipsa
+            eligendi modi facere illum, provident blanditiis perferendis expedita qui dignissimos voluptatibus eum
+            adipisci, ipsam nulla? Exercitationem, perspiciatis
+            deserunt?
+        </p>
+    </div>
+</body>
+
+</html>
